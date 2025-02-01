@@ -1,0 +1,109 @@
+/* General container styling */
+.annotation-tool-container {
+  padding: 20px;
+  background-color: #fff7e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Styling for the button container */
+.annotation-tool-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the buttons */
+.annotation-tool-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc80;
+  color: #663300;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.annotation-tool-button:hover {
+  background-color: #ffb74d;
+}
+
+.annotation-tool-button.active {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+/* Styling for the Konva stage */
+.annotation-tool-stage {
+  border: 2px solid #ffcc80;
+  border-radius: 10px;
+}
+
+/* Body styling for better visual appeal */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: conic-gradient(from 180deg at 50% 70%,hsla(0,0%,98%,1) 0deg,#eec32d 72.0000010728836deg,#ec4b4b 144.0000021457672deg,#709ab9 216.00000858306885deg,#4dffbf 288.0000042915344deg,hsla(0,0%,98%,1) 1turn);
+ 
+
+  background-size: 400% 400%;
+  mask:
+    radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+}
+
+/* Gradient animation for the body background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
