@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+This one-page React web application enables users to upload, view, and annotate files (PDF, DOC, XLS/XLSX, JPG, PNG, MSG) with advanced editing features. Users can add text boxes, shapes (lines, circles, squares), and transparent/opaque highlights to files. Annotations are preserved when saving the document in its original format. The UI/UX is clean and intuitive, ensuring seamless interaction.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
